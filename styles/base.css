@@ -1,0 +1,41 @@
+body {
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 600;
+}
+header { 
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: black;
+    background-color:beige;
+    padding: 8px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: lightpink;
+    padding: 8px;
+}
+nav a:hover {
+    text-decoration: overline;
+}
+h1 {
+    text-align: center;
+}
+
+main {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    align-items: start;
+}
+
+
+footer {
+    text-align: center;
+}
