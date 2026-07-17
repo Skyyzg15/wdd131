@@ -8,9 +8,10 @@ header {
     text-align: center;
     color: black;
     background-color:beige;
-    padding: 8px;
+    padding: 6px;
 }
-nav {
+nav a 
+{
     display: flex;
     justify-content: space-around;
     background-color: lightpink;
@@ -24,8 +25,8 @@ h1 {
 }
 
 main {
-    max-width: 1000px;
-    width: 90%;
+    max-width: 960px;
+    width: 100%;
     margin: 0 auto;
 }
 .card {
