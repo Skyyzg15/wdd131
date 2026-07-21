@@ -1,0 +1,39 @@
+body {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+}
+
+header {
+    text-align: center;
+    color: whitesmoke;
+    background-color: lightskyblue;
+    padding: 8px;
+}
+
+nav a{
+    display: flex;
+    justify-content: end;
+    background-color: lightpink;
+    padding: 8px;
+}
+
+nav a:hover {
+    text-decoration: wavy;
+    color: lightyellow;
+}
+
+figure {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    place-items: center;
+}
+
+main {
+    max-width: 800;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: lightskyblue;
+    text-align: center;
+}
