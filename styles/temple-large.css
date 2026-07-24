@@ -1,0 +1,21 @@
+@media (min-width: 40em) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: row;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat (1fr 1fr 1fr);
+        max-width: 2000px;
+        margin: 0 auto;
+        gap: 20px;
+        padding: 20px;
+    }
+    #menu {
+        display: none;
+    }
+}                              

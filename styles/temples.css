@@ -1,20 +1,47 @@
 body {
     font-family: "Playfair Display", serif;
-    font-weight: 400;
 }
 
-header {
-    text-align: center;
+header h1 {
+    font-size: 2rem;
     color: whitesmoke;
-    background-color: lightskyblue;
-    padding: 8px;
 }
 
-nav a{
+/*mobile view*/
+header {
     display: flex;
-    justify-content: end;
-    background-color: lightpink;
-    padding: 8px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightblue;
+    padding: 2px;
+}
+
+.navigation {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.navigation.open {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu {
+    font-size: 2rem;
+    border: 0;
+    color: blue;
+    position: absolute;
+    right: 1rem;
+}
+
+#menu::before {
+    content: '≡';
+}
+#menu.open::before {
+    content: 'X';
 }
 
 nav a:hover {
@@ -22,18 +49,28 @@ nav a:hover {
     color: lightyellow;
 }
 
-figure {
+.figure {   
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 28px;
     place-items: center;
 }
 
+figcaption {
+    text-align: start;
+    font-size: smaller;   
+}
+
 main {
-    max-width: 800;
+    max-width: 800px;
     margin: 0 auto;
 }
 
+main h1 {
+    text-align: center;
+}
+
 footer {
-    background-color: lightskyblue;
+    background-color: lightblue;
     text-align: center;
 }
