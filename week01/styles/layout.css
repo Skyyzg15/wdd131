@@ -1,0 +1,33 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    display: grid;
+    grid-template-columns: auto 1fr auto / auto 1fr auto;
+    height: 100%;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    background: lightskyblue;
+    padding: 2rem;
+}
+
+h1 {
+    background: pink;
+    padding: 4rem;
+}
+
+.left-sidebar {
+    background: purple;
+    grid-column: 1/2;
+}
+
+.right-sidebar {
+    background: lightgreen;
+}
+
+footer {
+    text-align: center;
+    background: lightyellow;
+    padding: 8rem;
+}
