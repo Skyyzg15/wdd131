@@ -1,0 +1,43 @@
+@media screen and (min-width: 38rem) {
+    .hero-container {
+        position: relative;
+        border: 1px solid #000;
+    }
+    main {
+        display: block;
+        margin: 0;
+    }
+    
+    h2 {
+        background-color: lightsteelblue;
+        padding: 10px ;
+    }
+
+    .card-data, .card-weather {
+       position: absolute;
+       width: 230px;
+       text-align: center;
+       background-color: white;
+       opacity: 0.8;
+       padding: 10px;
+       box-sizing: border-box;
+    }
+
+    .card-data {
+       top: 120px;
+       left: 20px;
+    }
+    .card-weather {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    #weather-heading::after {
+        content: "⛅" ;
+        font-size: 1rem;
+        margin-left: 8px;
+    }
+    .weather-img{
+        display: none;
+    }
+}

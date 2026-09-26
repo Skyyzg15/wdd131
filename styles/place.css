@@ -1,0 +1,48 @@
+:root {
+    --primary-color: #b8f4fc;
+    --secondary-color: #1b7e79;
+    --accent1-color: #03241db9;
+    --heading-font: "Playfair Display", serif;
+    --body-font: Roboto, helvetica, sans-serif;
+}
+
+header h1{
+    background-color: var(--primary-color);
+    font-family: var(--heading-font);
+    text-align: center;
+    font-size: 2.4rem;
+    border-bottom: 10px solid var(--accent1-color);
+    padding: 15px
+}
+
+.hero img{
+    width: 100%;
+    display: block;
+    height: auto;
+}
+section {
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 8px;
+}
+
+.weather-img {
+    display: block;
+    width: 38px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#weather-heading::after {
+    content: "";
+}
+
+main {
+    margin-top: 1rem;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    padding: 6px;
+    text-align: center;
+}
