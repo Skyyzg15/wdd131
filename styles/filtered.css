@@ -1,0 +1,79 @@
+body {
+    font-family: "Playfair Display", serif;
+}
+
+h1 {
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+header {
+    background-color: lightblue;
+}
+.navigation {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#hambutton {
+    font-size: 2rem;
+    border: 0;
+    color: blue;
+    position: absolute;
+    right: 1rem;
+}
+
+#hambutton::before {
+    content: '≡';
+}
+
+#hambutton.open::before {
+    content: 'X';
+}
+
+.res-grid img {
+    width: 280px;
+    height: 180px;
+    margin-top: 1rem;
+}
+
+.res-grid {   
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.res-grid section {
+    background-color: whitesmoke;
+    border: 1px solid #000;
+    font-size: smaller;   
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.res-grid h3 {
+    text-align: center;
+    font-size: large;
+}
+.res-grid p {
+    text-align: center;
+}
+
+main h2 {
+    text-align: center;
+    color: black;
+    font-size: 1.5rem;
+}
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+footer {
+    background-color: lightblue;
+    text-align: center;
+}
