@@ -6,7 +6,7 @@ const navigation = document.querySelector('.navigation');
 const hambutton = document.querySelector('#hambutton');
 
 hambutton.addEventListener('click', () => {
-  navigation.classList.toggle('open');
+  navigation.classList.toggle('close');
   hambutton.classList.toggle('open');
 });
 
@@ -86,6 +86,48 @@ const temples = [
 ];
 
 createTempleCard(temples);
+// Capturar los enlaces del menú
+const homeLink = document.querySelector("#home"); // Asegúrate de asignar id u otros selectores en tu HTML
+const oldLink = document.querySelector("#old");
+const newLink = document.querySelector("#new");
+const largeLink = document.querySelector("#large");
+const smallLink = document.querySelector("#small");
+
+// Home: Muestra todos
+homeLink.addEventListener("click", () => {
+  createTempleCard(temples);
+});
+
+// Old: Construidos antes de 1900
+oldLink.addEventListener("click", () => {
+  const oldTemples = temples.filter((temple) => {
+    // Extrae el año formateando la fecha (ej. "1888, May, 21" -> 1888)
+    const year = parseInt(temple.dedicated.split(",")[0]);
+    return year < 1900;
+  });
+  createTempleCard(oldTemples);
+});
+
+// New: Construidos después del 2000
+newLink.addEventListener("click", () => {
+  const newTemples = temples.filter((temple) => {
+    const year = parseInt(temple.dedicated.split(",")[0]);
+    return year > 2000;
+  });
+  createTempleCard(newTemples);
+});
+
+// Large: Más grandes de 90,000 pies cuadrados
+largeLink.addEventListener("click", () => {
+  const largeTemples = temples.filter((temple) => temple.area > 90000);
+  createTempleCard(largeTemples);
+});
+
+// Small: Más pequeños de 10,000 pies cuadrados
+smallLink.addEventListener("click", () => {
+  const smallTemples = temples.filter((temple) => temple.area < 10000);
+  createTempleCard(smallTemples);
+});
 
 function createTempleCard(filteredTemples) {
   document.querySelector(".res-grid").innerHTML = "";
