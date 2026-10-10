@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Product Review Form</title>
+   <meta name="description" content="Review Form">
+   <meta name="author" content="Cielo Zegarra">
+   <link rel="stylesheet" href="styles/form.css">
+   <script src="scripts/form.js" defer></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+      <h1>Product Review</h1>
+
+    </header>
+    <main>
+      <form method="get" action="review.html">
+         <fieldset>
+            <label for="product">Product Name</label>
+             <select id="product-select" name="product" required>
+               <option value="disable-selected">Select a Product...</option>
+             </select>
+
+             <div class="Audience">
+               <label for="Rating">Overall Rating</label>
+                <input type="radio" id="onestar" name="stars" value="1" required>
+                <label for="onestar"></label>
+
+                <input type="radio" id="twostar" name="stars" value="2" required>
+                <label for="twostar"></label>
+
+                <input type="radio" id="threestar" name="stars" value="3" required>
+                <label for="threestar"></label>
+
+                <input type="radio" id="fourstar" name="stars" value="4" required>
+                <label for="fourstar"></label>
+
+                <input type="radio" id="fivestar" name="stars" value="5" required>
+                <label for="fivestar"></label>
+             </div>
+
+             <label for="date">Date of Installation</label>
+             <input type="date" id="date" name="completeDate" required>
+
+             <div>Which features did you find useful in the product?</div>
+              <span class="check">(Check all that apply)</span>
+               <label for="durability"><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
+               <label for="use"><input type="checkbox" id="use" name="use" value="yes">Use</label>
+               <label for="performance"><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
+               <label for="design"><input type="checkbox" id="design" name="design" value="yes">Design</label>
+
+             <label for="wrv">Written Review</label><span class="optional">(Optional)</span><textarea id="wrv" name="written-review"></textarea>
+
+             <label for="un">Your Name</label><span class="optional">(Optional)</span><input type="text" id="name" name="name">
+
+             <input type="submit" value="Post Review">
+
+         </fieldset>
+      </form>
+    </main>
+  <footer><p>&copy;<span id="currentyear"></span> 🌸 Cielo Zegarra 🌸 Perú</p>
+     <p id="lastModified"></p></footer>
+</body>
+</html> 

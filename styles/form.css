@@ -1,0 +1,124 @@
+body {
+    font-family: "Playfair Display", serif;
+}
+
+h1 {
+    font-size: 2rem;
+    color: whitesmoke;
+    padding: 1rem;
+    margin: 0;
+}
+
+header {
+    background-color: #0f0f46;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+}
+.Audience {
+    display: flex;
+    gap: 2.5rem;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+.star-rating {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 10px auto;
+  position: relative;
+}
+
+.star-rating > label {
+  width: 30px;
+  height: 30px;
+  font-family: Arial;
+  font-size: 30px;
+  transition: 0.2s ease;
+  color: #053574
+}
+
+.wf1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 2rem;
+    background-color: #eee;
+}
+
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    font-size: medium;
+}
+
+.wf1 div {
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    font-size: medium;
+}
+
+.wf1 input[type='date'],
+.wf1 select {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 0.2rem;
+    color: #555;
+    width: 100%;
+    font-size: medium;
+    padding: 0.4rem;
+}
+
+.wf1 input[type='radio'],
+.wf1 input[type='checkbox'] {
+    margin-right: 6px;
+}
+
+.wf1 textarea {
+  padding: 2rem;
+  border: 1px solid #CCCCCC;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.wf1 input[type='text'] {
+  padding: 1rem;
+  border: 1px solid #CCCCCC;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.wf1 input[type='submit'] {
+    border: none;
+    background-image: linear-gradient(#08a1dd, #0486b9);
+    color: #fff;
+    border-radius: 6px;
+    padding: 1rem;
+    width: 100%;
+    margin-top: 20px;
+    font-size: medium;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+footer {
+    background-color: lightblue;
+    text-align: center;
+}
+
+@media (min-width: 32rem) {
+    
+    #hambutton {
+       display: none;
+    }}
