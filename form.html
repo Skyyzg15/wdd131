@@ -15,12 +15,11 @@
 <body>
     <header>
       <h1>Product Review</h1>
-
     </header>
     <main>
-      <form method="get" action="review.html">
+      <form method="get" action="review.html" class="wf1">
          <fieldset>
-            <label for="product">Product Name</label>
+             <label for="product">Product Name</label>
              <select id="product-select" name="product" required>
                <option value="disable-selected">Select a Product...</option>
              </select>
@@ -55,7 +54,7 @@
 
              <label for="wrv">Written Review</label><span class="optional">(Optional)</span><textarea id="wrv" name="written-review"></textarea>
 
-             <label for="un">Your Name</label><span class="optional">(Optional)</span><input type="text" id="name" name="name">
+             <label for="uname">Your Name</label><span class="optional">(Optional)</span><input type="text" id="name" name="name">
 
              <input type="submit" value="Post Review">
 

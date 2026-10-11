@@ -1,6 +1,6 @@
 const currentYear = new Date().getFullYear();
 document.getElementById("currentyear").textContent = currentYear;
-document.getElementById("lastModified").innerHTML = document.lastModified; 'Last Modified: ${document.lastModified}';
+document.getElementById("lastModified").innerHTML = document.lastModified; 'Last Modification: ${document.lastModified}';
 
 const products = [
   {

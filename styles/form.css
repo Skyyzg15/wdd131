@@ -11,18 +11,18 @@ h1 {
 
 header {
     background-color: #0f0f46;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    padding: 2rem;
+    text-align: center;
+    font-size: large;
+    padding: 1.5rem;
 }
+
 .Audience {
     display: flex;
     gap: 2.5rem;
     padding-bottom: 1rem;
     margin: 0;
 }
+
 .star-rating {
   display: flex;
   align-items: center;
@@ -109,16 +109,20 @@ header {
 }
 
 main {
-    max-width: 800px;
-    margin: 0 auto;
+    padding: 0 2%;
+    min-height: 20px;
 }
 footer {
     background-color: lightblue;
     text-align: center;
+    font-size: medium;
+    padding: 1.5rem;
 }
 
-@media (min-width: 32rem) {
+@media (min-width: 64rem) {
     
-    #hambutton {
-       display: none;
-    }}
+    .check {
+       font-style: italic;
+       font-size: small;
+    }
+}
