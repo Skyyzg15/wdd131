@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Product Review Form</title>
-   <meta name="description" content="Review Form">
+   <meta name="description" content="Hi I'm Cielo Zegarra and I am from Peru. Currently I studying Software Development, I love coding, It's amazing!">
    <meta name="author" content="Cielo Zegarra">
    <link rel="stylesheet" href="styles/form.css">
    <script src="scripts/form.js" defer></script>
@@ -19,27 +19,28 @@
     <main>
       <form method="get" action="review.html" class="wf1">
          <fieldset>
-             <label for="product">Product Name</label>
-             <select id="product-select" name="product" required>
-               <option value="disable-selected">Select a Product...</option>
+             <label for="product-select">Product Name</label>
+             <select id="product-select" name="product-select" required>
+               <option value="" disabled selected>Select a Product...</option>
              </select>
 
              <div class="Audience">
-               <label for="Rating">Overall Rating</label>
-                <input type="radio" id="onestar" name="stars" value="1" required>
-                <label for="onestar"></label>
+               <legend>Overall Rating</legend>
 
-                <input type="radio" id="twostar" name="stars" value="2" required>
-                <label for="twostar"></label>
+                <input type="radio" id="star1" name="stars" value="1" required>☆
+                <label for="star1"></label>
 
-                <input type="radio" id="threestar" name="stars" value="3" required>
-                <label for="threestar"></label>
+                <input type="radio" id="star2" name="stars" value="2" required>☆☆
+                <label for="star2"></label>
 
-                <input type="radio" id="fourstar" name="stars" value="4" required>
-                <label for="fourstar"></label>
+                <input type="radio" id="star3" name="stars" value="3" required>☆☆☆
+                <label for="star3"></label>
 
-                <input type="radio" id="fivestar" name="stars" value="5" required>
-                <label for="fivestar"></label>
+                <input type="radio" id="star4" name="stars" value="4" required>☆☆☆☆
+                <label for="star4"></label>
+
+                <input type="radio" id="star5" name="stars" value="5" required>☆☆☆☆☆
+                <label for="star5"></label>
              </div>
 
              <label for="date">Date of Installation</label>
@@ -54,7 +55,7 @@
 
              <label for="wrv">Written Review</label><span class="optional">(Optional)</span><textarea id="wrv" name="written-review"></textarea>
 
-             <label for="uname">Your Name</label><span class="optional">(Optional)</span><input type="text" id="name" name="name">
+             <label for="name">Your Name</label><span class="optional">(Optional)</span><input type="text" id="name" name="name">
 
              <input type="submit" value="Post Review">
 

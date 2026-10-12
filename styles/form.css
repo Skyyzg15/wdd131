@@ -1,9 +1,8 @@
 body {
     font-family: "Playfair Display", serif;
 }
-
 h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: whitesmoke;
     padding: 1rem;
     margin: 0;
@@ -18,28 +17,18 @@ header {
 
 .Audience {
     display: flex;
-    gap: 2.5rem;
-    padding-bottom: 1rem;
+    flex-direction: row;
+    gap: 1rem;
+    padding-bottom: 2rem;
     margin: 0;
 }
 
-.star-rating {
-  display: flex;
-  align-items: center;
-  width: 200px;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  margin: 10px auto;
-  position: relative;
-}
-
-.star-rating > label {
+.Audience > label {
   width: 30px;
   height: 30px;
   font-family: Arial;
   font-size: 30px;
   transition: 0.2s ease;
-  color: #053574
 }
 
 .wf1 fieldset {
@@ -58,7 +47,6 @@ header {
 
 .wf1 div {
     padding-top: 1rem;
-    font-size: 0.9rem;
     font-size: medium;
 }
 
@@ -99,7 +87,7 @@ header {
 
 .wf1 input[type='submit'] {
     border: none;
-    background-image: linear-gradient(#08a1dd, #0486b9);
+    background-image: linear-gradient(#66a3bd, lightpink);
     color: #fff;
     border-radius: 6px;
     padding: 1rem;
@@ -108,19 +96,37 @@ header {
     font-size: medium;
 }
 
+.wf1 input:required,
+.wf1 select:required {
+    border-bottom: solid red;
+}
+.wf1 input:required:valid, 
+.wf1 select:required:valid {
+    border-bottom: solid green;
+}
+
 main {
     padding: 0 2%;
     min-height: 20px;
 }
+.optional {
+    color:#0f0f46;
+    font-size: small;
+}
+
 footer {
     background-color: lightblue;
     text-align: center;
     font-size: medium;
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
-@media (min-width: 64rem) {
-    
+@media only screen and (min-width: 64rem) {
+    header, nav, main, footer {
+        max-width: 64rem;
+        margin:auto;
+        width: 100%;
+    }
     .check {
        font-style: italic;
        font-size: small;
