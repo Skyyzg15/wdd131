@@ -46,7 +46,7 @@ header {
 }
 
 .wf1 div {
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     font-size: medium;
 }
 
@@ -59,7 +59,7 @@ header {
     color: #555;
     width: 100%;
     font-size: medium;
-    padding: 0.4rem;
+    padding: 0.3rem;
 }
 
 .wf1 input[type='radio'],
