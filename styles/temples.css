@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     font-family: "Playfair Display", serif;
 }
@@ -9,12 +15,18 @@ h1 {
 
 header {
     background-color: lightblue;
+    padding: 2rem;
 }
+
 .navigation {
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.navigation a:hover {
+    background-color: aquamarine;
+    color: black;
 }
 
 #menu {
@@ -53,7 +65,9 @@ main {
     max-width: 800px;
     margin: 0 auto;
 }
+
 footer {
     background-color: lightblue;
     text-align: center;
+    padding: 2rem;
 }
