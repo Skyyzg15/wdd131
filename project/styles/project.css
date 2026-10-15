@@ -1,0 +1,160 @@
+:root {
+  --primary-color: rgb(221, 128, 143);
+  --secondary-color: #e3e3e3;
+  --accent1-color: rgb(77, 25, 61);
+  --accent2-color: rgba(238, 185, 124, 0.89);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "PlayDisfair";
+  color: var(--second-color);
+  background-color: var(--accent1-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 20px 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.navigation a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+.navigation a:hover,
+.navigation a.active {
+  background-color: var(--accent1-color);
+  text-decoration: underline;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.hero content h1 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.hero content p {
+  margin-bottom: 15px;
+}
+
+.cta button {
+  display: inline-block;
+  background-color: var(--accent2-color);
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.cta button:hover {
+  background-color: var(--accent1-color);
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.features h2 {
+  color: var(--accent2-color);
+  margin-bottom: 20px;
+}
+.features {
+  text-align: center;
+  margin-top: 20px;
+}
+.feature-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.feature-card {
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 8px;
+}
+.feature-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-nav {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+.filter-btn {
+  padding: 8px 16px;
+  border-radius: 1px solid var(--accent2-color);
+  background-color: #ffffff;
+  color: var(--accent1-color);
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.product-card {
+  background-color: var(--second-color);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}

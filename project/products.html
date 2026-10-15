@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Project</title> 
+    <meta name="description" content="This page is about you, and the care of your skin!">
+    <meta name="author" content="Cielo Zegarra">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/project.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+       <img src="images/logo.png" alt="Website Logo">
+       <button id="menu"></button>
+
+         <nav class="navigation wrap">
+           <a href="#">Home</a>
+           <a href="products.html">Products</a>
+           <a href="#">About Us</a>
+           <a href="#">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+      <h1>Explore our product catalog</h1>
+      <p class="subtitle">filter according to your skin's specific needs:</p>
+
+       <nav class="filter-nav">
+          <button id="all" class="filter-btn active">All Skin Types</button>
+          <button id="dry" class="filter-btn">Dry Skin</button>
+          <button id="oily" class="filter-btn">Oily Skin</button>
+          <button id="sensitive" class="filter-btn">Sensitive Skin</button>
+      </nav>
+
+      <section id="product-container" class="product-grid">
+        
+      </section>
+    </main>
+    <footer>
+        <p> &copy;<span id="currentyear"></span> | Glow Skin | Peru </p>
+  </footer>
+</body>
+</html>
